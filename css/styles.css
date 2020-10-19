@@ -3,6 +3,11 @@ body {
   font-family: 'Montserrat', serif;
 }
 
+html{
+  scroll-behavior: smooth;
+  transition-duration: 2s;
+}
+
 h1 {
   color: #66BFBF;
   font-size: 5.625rem;
@@ -27,10 +32,22 @@ p {
   line-height: 2;
 }
 
-hr {
-  border: 1px;
-  margin: 100px auto;
+.fronthead{
+  position: absolute;
+  font-size: 4vw;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
+
+.quirks{
+  position: absolute;
+  font-size: 2vw;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 
 a{
   color: #11999E;
@@ -39,11 +56,21 @@ a{
   text-decoration: none;
 }
 
+.topp{
+  position: static;
+  z-index: 10;
+  top: 0;
+}
+
 .navbar-brand{
-  padding-left: 20%;
+  padding-left: 15%;
 }
 .nav-item{
   margin-right: 40px;
+  transition-property: width;
+  transition-duration: 2s;
+  transition-timing-function: linear;
+  transition-delay: 1s;
 }
 a:hover {
   color: #EAF6F6;
@@ -60,13 +87,6 @@ a:hover {
 
 .imgur:hover{
   width: 250px;
-}
-
-.fronthead{
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 
 .top{
@@ -114,6 +134,7 @@ a:hover {
 }
 
 .skills{
+  padding: 3% 0;
   text-align: center;
   background-color: #1f1f1f;
   color: white;
@@ -126,14 +147,14 @@ a:hover {
 
 .code-img {
   width: 25%;
-  float: left;
-  margin-right: 30px;
-}
-
-.chilli-img {
-  width: 25%;
   float: right;
   margin-left: 30px;
+}
+
+.web-img {
+  width: 25%;
+  float: left;
+  margin-right: 30px;
 }
 
 .bottom-container{
